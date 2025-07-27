@@ -1,0 +1,7 @@
+By dropping the QR code generation (which is the part that really benefits from a server), we can create a powerful client-side application. This means all the processing happens directly in the user's browser using JavaScript. Nothing needs to be sent to a server, making it perfect for GitHub Pages.
+The Concept: The Browser as a Mini-Factory
+Input: The user fills out the HTML form and selects an image from their computer.
+Processing (In the Browser): Your JavaScript code will read the form data. It will then use a browser tool called FileReader to read the user's image and convert it into a special text format called Base64.
+Assembly (In the Browser): The JavaScript will then build the V-Card as a single piece of text, embedding the Base64 image string directly inside it.
+Output: The script creates a special, temporary download link for the V-Card file it just created in memory and prompts the user to save it.
+It's fast, secure (the user's data never leaves their computer), and completely free to host.
