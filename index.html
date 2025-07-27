@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>V-Card Generator</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <header class="navbar">
+        <div class="container">
+            <h1 class="nav-logo">V-Card Generator</h1>
+        </div>
+    </header>
+
+    <main class="container">
+        <div class="form-container">
+            <h2>Create Your Own Digital Contact Card</h2>
+            <p>Fill in your details, upload a photo, and instantly download your V-Card file.</p>
+            
+            <form id="vcard-form">
+                <div class="form-grid">
+                    <div class="form-group">
+                        <label for="fullName">Full Name *</label>
+                        <input type="text" id="fullName" placeholder="e.g., Gauri Hate" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="company">Company / Organization</label>
+                        <input type="text" id="company" placeholder="e.g., Methi & More">
+                    </div>
+                    <div class="form-group">
+                        <label for="title">Title / Role</label>
+                        <input type="text" id="title" placeholder="e.g., Co-Founder and CEO">
+                    </div>
+                    <div class="form-group">
+                        <label for="phone">Phone Number</label>
+                        <input type="tel" id="phone" placeholder="e.g., +918898573121">
+                    </div>
+                    <div class="form-group">
+                        <label for="email">Email Address</label>
+                        <input type="email" id="email" placeholder="e.g., methiandmore@gmail.com">
+                    </div>
+                    <div class="form-group">
+                        <label for="website">Website URL</label>
+                        <input type="url" id="website" placeholder="https://...">
+                    </div>
+                </div>
+
+                <div class="form-group">
+                    <label for="photo">Upload Photo or Logo (Optional)</label>
+                    <input type="file" id="photo" accept="image/png, image/jpeg">
+                </div>
+                
+                <button type="submit" id="generate-btn">Create & Download V-Card</button>
+            </form>
+        </div>
+
+        <div id="result-container" class="result-container hidden">
+            <h3>Success!</h3>
+            <p>Your V-Card has been generated. If the download didn't start automatically, please try again.</p>
+        </div>
+    </main>
+
+    <footer class="site-footer">
+        <p>© 2025 A Methi & More Project</p>
+    </footer>
+
+    <script src="script.js"></script>
+
+</body>
+</html>
